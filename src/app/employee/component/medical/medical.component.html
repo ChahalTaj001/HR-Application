@@ -1,0 +1,24 @@
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Policy Name</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Claimed Amount</th>
+            <th scope="col">Policy Max Amount</th>
+            <th scope="col">Balance Left</th>
+            <th scope="col">No. of Dependents</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of medicals">
+            <td>{{row.id}}</td>
+            <td>{{row.policyName}}</td>
+            <td>{{row.salary}}</td>
+            <td>{{row.claimedAmount}}</td>
+            <td>{{row.policyMaxAmount}}</td>
+            <td>{{row.balanceLeft}}</td>
+            <td>{{row.dependents}}</td>
+        </tr>
+    </tbody>
+</table>

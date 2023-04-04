@@ -1,0 +1,131 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Nikk ",
+      "lastName": "Jones",
+      "email": "nikk@gmail.com",
+      "contactNumber": "123-456-6789",
+      "salary": "5,00,000"
+    },
+    {
+      "id": 2,
+      "firstName": "Samantha ",
+      "lastName": "Wheeler",
+      "email": "samantha@gmail.com",
+      "contactNumber": "203-456-8642",
+      "salary": "8,00,000"
+    },
+    {
+      "id": 3,
+      "firstName": "John",
+      "lastName": "Paul",
+      "email": "john@gmail.com",
+      "contactNumber": "203-567-0987",
+      "salary": "6,00,000"
+    },
+    {
+      "id": 4,
+      "firstName": "Donald",
+      "lastName": "Resseler",
+      "email": "donald@gmail.com",
+      "contactNumber": "876-567-0987",
+      "salary": "4,00,000"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1001,
+      "policyName": "Health Insurance",
+      "salary": "6,00,000",
+      "claimedAmount": "5,00,000",
+      "policyMaxAmount": "15,00,000",
+      "balanceLeft": "10,00,000",
+      "dependents": "4"
+    },
+    {
+      "id": 1002,
+      "policyName": "Accidental",
+      "salary": "4,00,000",
+      "claimedAmount": "6,00,000",
+      "policyMaxAmount": "10,00,000",
+      "balanceLeft": "4,00,000",
+      "dependents": "3"
+    },
+    {
+      "id": 1003,
+      "policyName": "Car Insurance",
+      "salary": "7,00,000",
+      "claimedAmount": "10,00,000",
+      "policyMaxAmount": "17,50,000",
+      "balanceLeft": "7,50,000",
+      "dependents": "5"
+    },
+    {
+      "id": 1004,
+      "policyName": "Health Insurance",
+      "salary": "8,00,000",
+      "claimedAmount": "4,00,000",
+      "policyMaxAmount": "20,00,000",
+      "balanceLeft": "16,00,000",
+      "dependents": "3"
+    },
+    {
+      "id": 1005,
+      "policyName": "Inusrance",
+      "salary": "6,00,000",
+      "claimedAmount": "8,00,000",
+      "policyMaxAmount": "15,00,000",
+      "balanceLeft": "7,00,000",
+      "dependents": "2"
+    },
+    {
+      "id": 1006,
+      "policyName": "Accidental",
+      "salary": "8,00,000",
+      "claimedAmount": "12,00,000",
+      "policyMaxAmount": "20,00,000",
+      "balanceLeft": "8,00,000",
+      "dependents": "4"
+    },
+    {
+      "id": 1007,
+      "policyName": "Home Insurance",
+      "salary": "5,00,000",
+      "claimedAmount": "7,00,000",
+      "policyMaxAmount": "10,00,000",
+      "balanceLeft": "3,00,000",
+      "dependents": "2"
+    },
+    {
+      "id": 1008,
+      "policyName": "Health Insurance",
+      "salary": "4,00,000",
+      "claimedAmount": "5,00,000",
+      "policyMaxAmount": "10,00,000",
+      "balanceLeft": "5,00,000",
+      "dependents": "2"
+    },
+    {
+      "id": 1009,
+      "policyName": "Car Insurance",
+      "salary": "7,00,000",
+      "claimedAmount": "10,00,000",
+      "policyMaxAmount": "17,50,000",
+      "balanceLeft": "7,50,000",
+      "dependents": "3"
+    },
+    {
+      "id": 1010,
+      "policyName": "Home Insurance",
+      "salary": "6,00,000",
+      "claimedAmount": "10,00,000",
+      "policyMaxAmount": "15,00,000",
+      "balanceLeft": "5,00,000",
+      "dependents": "2"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
