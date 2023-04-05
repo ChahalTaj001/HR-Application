@@ -1,0 +1,16 @@
+<div class="container">
+    
+    <h2 style="margin-top: 5%;">Products</h2>
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+        <div class="card col-md-3">
+            <img src="{{item.thumbnail}}" alt="">
+            <h5>{{item.title}}</h5>
+            <p>{{item.price | currency}}</p>
+            <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>           
+
+        </div>
+        </ng-container>
+    </div>
+</div>
+ 

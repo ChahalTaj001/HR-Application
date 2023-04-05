@@ -15,6 +15,8 @@ import { PieComponent } from './employee/component/pie/pie.component';
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
   {path:'home', component:HomeComponent},
+  {path:'products', loadChildren:()=>import('./users/users.module')
+.then(mod=> mod.UsersModule)},
   {path:'employee', component:EmployeeComponent, canActivate:[AuthGuard] },
   {path:'login', component:LoginComponent},
   {path:'signup', component:SignupComponent},

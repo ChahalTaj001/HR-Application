@@ -3,7 +3,15 @@ import { EmployeeService } from '../shared/employee.service';
 import {FormBuilder, FormGroup} from '@angular/forms'
 import { EmployeeModel } from './employee.model';
 import { EmployeetableService } from '../shared/employeetable.service';
-
+interface EmployeeData{
+  imageUrl: ImageData,
+  id: number,
+  firstName: string,
+  lastName: string,
+  email : string,
+    contactNumber : string, 
+    salary : string 
+}
 
 @Component({
   selector: 'app-employee',
@@ -14,7 +22,7 @@ export class EmployeeComponent implements OnInit {
 
   displayMode:any = 'card'
  
-  employeeList : any;
+  employeeList : EmployeeData[];
   formValue !: FormGroup
   employeeModelObj : EmployeeModel = new EmployeeModel();
   employeeData !: any;

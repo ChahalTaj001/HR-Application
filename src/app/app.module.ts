@@ -26,39 +26,44 @@ import { LineComponent } from './employee/component/line/line.component';
 import { BarComponent } from './employee/component/bar/bar.component';
 import { PieComponent } from './employee/component/pie/pie.component';
 
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    SignupComponent,
-    EmployeeComponent,
-    HomeComponent,
-    MedicalComponent,
-    ChartsComponent,
-    LineComponent,
-    BarComponent,
-    PieComponent
-  ],
-  imports: [
-  
-  BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatTableModule,
-    FormsModule,
-    NgChartsModule
-  ],
-  providers: [  AuthGuard,
-  {provide: HTTP_INTERCEPTORS,
-  useClass: TokenInterceptorService,
-multi:true}],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        LoginComponent,
+        SignupComponent,
+        EmployeeComponent,
+        HomeComponent,
+        MedicalComponent,
+        ChartsComponent,
+        LineComponent,
+        BarComponent,
+        PieComponent
+    ],
+    providers: [AuthGuard,
+        { provide: HTTP_INTERCEPTORS,
+            useClass: TokenInterceptorService,
+            multi: true }],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatTableModule,
+        FormsModule,
+        NgChartsModule,
+       
+    ]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor() {
+    console.log('App Module Loaded')
+  }
+}

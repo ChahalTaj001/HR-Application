@@ -1,23 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../shared/home.service';
-
-interface Products {
-  thumbnail:ImageData,
-  title: string,
-  price: string,
-  description: string
-}
+import { HomeService } from 'src/app/shared/home.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-products',
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.css']
 })
-export class HomeComponent implements OnInit {
+export class ProductsComponent implements OnInit {
 
-  productList : any = {
-    
-  }
+  productList : any;
   constructor(private api:HomeService) { }
 
   ngOnInit(): void {
