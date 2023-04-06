@@ -17,8 +17,7 @@ export class ProductsComponent implements OnInit {
 
       let newArr = Object.values(res);
       this.productList = newArr[0]
-      console.log('res', this.productList)
-      console.log(Object.values(res))
+      
  
     })
   }

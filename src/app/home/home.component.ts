@@ -26,9 +26,7 @@ export class HomeComponent implements OnInit {
 
       let newArr = Object.values(res);
       this.productList = newArr[0]
-      console.log('res', this.productList)
-      console.log(Object.values(res))
- 
+     
     })
   }
 

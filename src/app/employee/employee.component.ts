@@ -68,7 +68,6 @@ export class EmployeeComponent implements OnInit {
 
     this.API.postEmployee(this.employeeModelObj)
     .subscribe(res=>{
-      console.log(res);
       alert("Employee added Successfully")
       let ref = document.getElementById('cancel')
       ref?.click();
