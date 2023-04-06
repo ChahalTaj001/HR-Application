@@ -27,6 +27,7 @@ import { BarComponent } from './employee/component/bar/bar.component';
 import { PieComponent } from './employee/component/pie/pie.component';
 
 
+
 @NgModule({
     declarations: [
         AppComponent,
