@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { AuthService } from '../shared/auth.service';
 import { Router } from '@angular/router';
 import { LoginModel } from './login.model';
+import { ErrorService } from '../shared/error.service';
 interface LoginData {
   username : string,
   password : string
@@ -15,14 +16,17 @@ interface LoginData {
 })
 export class LoginComponent implements OnInit {
  
-  errormessage : null;
+  error: String;
+  
   formLogin !: FormGroup;
   loginModelObj : LoginModel = new LoginModel()
   loginUserData: LoginData = {
     username: '',
     password: ''
   }
-  constructor(private _auth: AuthService, private _router: Router, private formBuilder : FormBuilder) {}
+  constructor(private _auth: AuthService,
+     private _router: Router,
+     private formBuilder : FormBuilder) { }
   ngOnInit(): void {
     this.formLogin = this.formBuilder.group({
       username: '',
@@ -43,8 +47,9 @@ export class LoginComponent implements OnInit {
           this._router.navigate(['/home'])
         },
         err => {
-        this.errormessage = err;
-        }
+          console.log(err)
+          this.error = err;
+         }
         )
   }
 }

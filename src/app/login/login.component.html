@@ -4,10 +4,10 @@
      <div class="card-header">
         <h3 class="mb-0">Login</h3>
      </div>
-     <div class="row" *ngIf="errormessage">
-        <h5 class="text-danger">{{ errormessage }}</h5>
+     <div *ngIf="error" class="alert alert-danger" role="alert">
+     <strong>An Error Occurred</strong> &nbsp; {{ error }}
      </div>
-     <div class="card-body" *ngIf="!errormessage">
+     <div class="card-body" >
         <form [formGroup]="formLogin">
             <div class="form-group">
                 <label class="form-label">Username</label>
